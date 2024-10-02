@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes e Séries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="menu-icon">☰</div>
+        <nav id="menu">
+            <ul>
+                
+                <li><a href="#" id="buscar-link">Buscar</a></li>
+                <li><a href="#" id="favoritos-link">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="buscar-section">
+            <div class="filter-container">
+                <input type="text" id="filtro" placeholder="Buscar filmes ou séries...">
+            </div>
+            <ul id="lista-filmes-series"></ul>
+        </section>
+
+        <section id="favoritos-section" style="display:none;">
+            <h2 id="h2">Meus Favoritos</h2>
+            <ul id="favoritos"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

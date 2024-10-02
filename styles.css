@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background-image: url(img.png);
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    ;
+}
+
+.menu-icon {
+    font-size: 50px;
+    color: rgb(234, 14, 14);
+    cursor: pointer;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+h1{
+    color: white;
+    text-align: left;
+    margin: auto;
+}
+h2{
+    
+    color: white;
+    margin: auto;
+    text-align: center;
+    background-color: #333;
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    header h1 {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 15px 10px; 
+    }
+}
+
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover {
+    background-color: #444;
+}
+
+.accordion-header .favorite {
+    cursor: pointer;
+    font-size: 20px;
+    color: azure;
+}
+
+.favorite.added {
+    color: gold;
+}
+
+.favorite.not-added {
+    color: white;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+#filtro {
+    width: 100%; 
+    max-width: 500px; 
+    padding: 10px;
+    font-size: 16px; 
+    border: 2px solid #333; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+#filtro:focus {
+    outline: none; 
+    border-color: #007BFF; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
