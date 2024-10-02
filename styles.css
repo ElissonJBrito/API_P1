@@ -87,7 +87,7 @@ h2{
 .accordion-content {
     display: none;
     padding: 10px;
-    background-color: #black;
+    background-color: black;
     border-top: 1px solid #ccc;
 }
 
